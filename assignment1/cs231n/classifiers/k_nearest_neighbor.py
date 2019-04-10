@@ -71,6 +71,8 @@ class KNearestNeighbor(object):
         # training point, and store the result in dists[i, j]. You should   #
         # not use a loop over dimension.                                    #
         #####################################################################
+
+
         dists[i][j] = np.sqrt(np.sum((X[i] - self.X_train[j]) ** 2))
         #####################################################################
         #                       END OF YOUR CODE                            #
@@ -93,7 +95,8 @@ class KNearestNeighbor(object):
       # Compute the l2 distance between the ith test point and all training #
       # points, and store the result in dists[i, :].                        #
       #######################################################################
-      pass
+      # 计算axis为1的和
+      dists[i] = np.sqrt(np.sum((self.X_train - X[i]) ** 2, 1))
       #######################################################################
       #                         END OF YOUR CODE                            #
       #######################################################################
@@ -121,7 +124,11 @@ class KNearestNeighbor(object):
     # HINT: Try to formulate the l2 distance using matrix multiplication    #
     #       and two broadcast sums.                                         #
     #########################################################################
-    pass
+    dists += np.sum(self.X_train ** 2, axis=1).reshape(1, num_train)
+    dists += np.sum(X ** 2, axis=1).reshape(num_test, 1)  # reshape for broadcasting
+    dists -= 2 * np.dot(X, self.X_train.T)
+
+    dists = np.sqrt(dists)
     #########################################################################
     #                         END OF YOUR CODE                              #
     #########################################################################
@@ -162,6 +169,12 @@ class KNearestNeighbor(object):
       # Store this label in y_pred[i]. Break ties by choosing the smaller     #
       # label.                                                                #
       #########################################################################
+
+
+
+      #np.bincount()可以把数组中出现的每个数字，当做index，数字出现的次数当做value来表示。
+
+      #np.argmax()可以返回数组中最大值的index。
       y_pred[i] = np.bincount(closest_y).argmax()
       #########################################################################
       #                           END OF YOUR CODE                            # 
