@@ -75,7 +75,11 @@ class TwoLayerNet(object):
     # Store the result in the scores variable, which should be an array of      #
     # shape (N, C).                                                             #
     #############################################################################
-    pass
+    fc1 = np.dot(X, W1) + b1  # N by H
+    fc1_act = np.maximum(0, fc1)  # relu
+    fc2 = np.dot(fc1_act, W2) + b2  # N by C
+    scores = fc2
+
     #############################################################################
     #                              END OF YOUR CODE                             #
     #############################################################################
@@ -92,7 +96,16 @@ class TwoLayerNet(object):
     # in the variable loss, which should be a scalar. Use the Softmax           #
     # classifier loss.                                                          #
     #############################################################################
-    pass
+    f_max = np.reshape(np.max(scores, axis=1), (N, 1))  # 找到每一行的最大值，然后reshape 之后减去
+    # 这样可以防止后面的操作会出现数值上的一些偏差
+    # regularization
+    scores -= f_max  # N BY C
+    p = np.exp(scores) / np.sum(np.exp(scores), axis=1, keepdims=True)  # N by C #这里要注意，除的是每个样本的和，不能全求和
+    # 求交叉熵！！
+    # y_true = np.zeros_like(p)
+    # y_true[np.arange(fc2.shape[0]), y] = 1.0  # 生成hot-vector
+    loss = np.sum(-np.log(p[np.arange(N), y])) / N + 0.5 * reg * np.sum(W2 * W2) + 0.5 * reg * np.sum(W1 * W1)
+
     #############################################################################
     #                              END OF YOUR CODE                             #
     #############################################################################
@@ -104,7 +117,31 @@ class TwoLayerNet(object):
     # and biases. Store the results in the grads dictionary. For example,       #
     # grads['W1'] should store the gradient on W1, and be a matrix of same size #
     #############################################################################
-    pass
+    # 反向传播
+    # 先算scores的梯度
+    dscores = p
+    dscores[np.arange(N), y] -= 1  # 损失函数对fc2(xW+b)，fc2的导数
+    dscores /= N  # N by C
+
+    # Backprop into W2 and b2
+    dW2 = np.dot(fc1_act.T, dscores)  # H by C
+    db2 = np.sum(dscores, axis=0, keepdims=True)  # (1,C)
+
+    # Backprop into hidden layer
+    drelu = np.dot(dscores, W2.T)  # (N,H)
+    dfc1 = drelu
+    dfc1[fc1 < 0] = 0  # (N,H)
+    # Backprop into W1 and b1
+    db1 = np.sum(dfc1, axis=0, keepdims=True)  # (1,H)
+    dW1 = np.dot(X.T, dfc1)  # (D,H)
+
+    # Add regularization gradient contribution
+    dW2 += reg * W2
+    dW1 += reg * W1
+    grads['W1'] = dW1
+    grads['W2'] = dW2
+    grads['b1'] = db1
+    grads['b2'] = db2
     #############################################################################
     #                              END OF YOUR CODE                             #
     #############################################################################
