@@ -185,7 +185,11 @@ class TwoLayerNet(object):
       # TODO: Create a random minibatch of training data and labels, storing  #
       # them in X_batch and y_batch respectively.                             #
       #########################################################################
-      pass
+      choice = np.random.choice(num_train, batch_size, replace=True)
+      # Sampling with relacement is faster than sampling without replacement
+      # 有重复比没重复更快
+      X_batch = X[choice]
+      y_batch = y[choice]
       #########################################################################
       #                             END OF YOUR CODE                          #
       #########################################################################
@@ -200,7 +204,9 @@ class TwoLayerNet(object):
       # using stochastic gradient descent. You'll need to use the gradients   #
       # stored in the grads dictionary defined above.                         #
       #########################################################################
-      pass
+      loss, grads = self.loss(X_batch, y=y_batch, reg=reg)  # 得到的grad是个dict类型
+      loss_history.append(loss)
+      v_W2, v_b2, v_W1, v_b1 = 0.0, 0.0, 0.0, 0.0
       #########################################################################
       #                             END OF YOUR CODE                          #
       #########################################################################
