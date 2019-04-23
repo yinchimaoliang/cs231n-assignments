@@ -408,7 +408,41 @@ def conv_backward_naive(dout, cache):
     ###########################################################################
     # TODO: Implement the convolutional backward pass.                        #
     ###########################################################################
-    pass
+    x, w, b, conv_param = cache
+
+    N, C, H, W = x.shape
+    F, _, HH, WW = w.shape
+    stride, pad = conv_param['stride'], conv_param['pad']
+    H_out = 1 + (H + 2 * pad - HH) / stride
+    W_out = 1 + (W + 2 * pad - WW) / stride
+
+    x_pad = np.pad(x, ((0,), (0,), (pad,), (pad,)), mode='constant', constant_values=0)
+    dx = np.zeros_like(x)
+    dx_pad = np.zeros_like(x_pad)
+    dw = np.zeros_like(w)
+    db = np.zeros_like(b)
+
+    db = np.sum(dout, axis=(0, 2, 3))
+
+    x_pad = np.pad(x, ((0,), (0,), (pad,), (pad,)), mode='constant', constant_values=0)
+
+    #求导过程中，dout为输入。
+    #求dw，则用dout * x
+    #求dx，则用dout * w
+
+    for i in range(int(H_out)):
+        for j in range(int(W_out)):
+            x_pad_masked = x_pad[:, :, i * stride:i * stride + HH, j * stride:j * stride + WW]
+            for k in range(F):  # compute dw
+                dw[k, :, :, :] += np.sum(x_pad_masked * (dout[:, k, i, j])[:, None, None, None], axis=0)
+            for n in range(N):  # compute dx_pad
+                dx_pad[n, :, i * stride:i * stride + HH, j * stride:j * stride + WW] += np.sum((w[:, :, :, :] *
+                                                                                                (dout[n, :, i, j])[:,
+                                                                                                None, None, None]),
+                                                                                               axis=0)
+
+
+    dx = dx_pad[:, :, pad:-pad, pad:-pad]
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
@@ -434,7 +468,18 @@ def max_pool_forward_naive(x, pool_param):
     ###########################################################################
     # TODO: Implement the max pooling forward pass                            #
     ###########################################################################
-    pass
+    N, C, H, W = x.shape
+    pool_height, pool_width = pool_param['pool_height'], pool_param['pool_width']
+    stride = pool_param['stride']
+    out_height = H / pool_height
+    out_width = W / pool_width
+    out = np.zeros((int(N), int(C), int(out_height), int(out_width)))
+    for i in range(int(out_height)):
+        for j in range(int(out_width)):
+            mask = x[:, :, i * stride:i * stride + pool_height, j * stride:j * stride + pool_width]
+
+
+    out[:, :, i, j] = np.max(mask, axis=(2, 3))
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
@@ -457,7 +502,23 @@ def max_pool_backward_naive(dout, cache):
     ###########################################################################
     # TODO: Implement the max pooling backward pass                           #
     ###########################################################################
-    pass
+    x, pool_param = cache
+    N, C, H, W = x.shape
+    pool_height, pool_width = pool_param['pool_height'], pool_param['pool_width']
+    stride = pool_param['stride']
+    dx = np.zeros_like(x)
+    out_height = H / pool_height
+    out_width = W / pool_width
+    for i in range(int(out_height)):
+        for j in range(int(out_width)):
+            # x, dx has the same dimension, so does x_mask and dx_mask
+            x_mask = x[:, :, i * stride:i * stride + pool_height, j * stride:j * stride + pool_width]
+            dx_mask = dx[:, :, i * stride:i * stride + pool_height, j * stride:j * stride + pool_width]
+            # flags: only the max value is True, others are False
+            flags = np.max(x_mask, axis=(2, 3), keepdims=True) == x_mask
+
+
+    dx_mask += flags * (dout[:, :, i, j])[:, :, None, None]
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
