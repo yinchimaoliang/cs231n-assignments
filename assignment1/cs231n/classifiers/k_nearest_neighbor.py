@@ -71,9 +71,8 @@ class KNearestNeighbor(object):
         # training point, and store the result in dists[i, j]. You should   #
         # not use a loop over dimension.                                    #
         #####################################################################
-
-
-        dists[i][j] = np.sqrt(np.sum((X[i] - self.X_train[j]) ** 2))
+        #双重循环计算ij间距离
+        dists[i, j] = np.sqrt(np.sum(np.square(self.X_train[j,:] - X[i,:])))
         #####################################################################
         #                       END OF YOUR CODE                            #
         #####################################################################
@@ -95,8 +94,8 @@ class KNearestNeighbor(object):
       # Compute the l2 distance between the ith test point and all training #
       # points, and store the result in dists[i, :].                        #
       #######################################################################
-      # 计算axis为1的和
-      dists[i] = np.sqrt(np.sum((self.X_train - X[i]) ** 2, 1))
+      # pass
+      dists[i, :] = np.sqrt(np.sum(np.square(self.X_train - X[i,:]),axis = 1))
       #######################################################################
       #                         END OF YOUR CODE                            #
       #######################################################################
@@ -124,10 +123,12 @@ class KNearestNeighbor(object):
     # HINT: Try to formulate the l2 distance using matrix multiplication    #
     #       and two broadcast sums.                                         #
     #########################################################################
-    dists += np.sum(self.X_train ** 2, axis=1).reshape(1, num_train)
-    dists += np.sum(X ** 2, axis=1).reshape(num_test, 1)  # reshape for broadcasting
-    dists -= 2 * np.dot(X, self.X_train.T)
-
+    #(x - y) ** 2 = x ** 2 + y ** 2 - 2 * x * y
+    dists = np.multiply(np.dot(X, self.X_train.T), -2)
+    sq1 = np.sum(np.square(X), axis=1, keepdims=True)
+    sq2 = np.sum(np.square(self.X_train), axis=1)
+    dists = np.add(dists, sq1)
+    dists = np.add(dists, sq2)
     dists = np.sqrt(dists)
     #########################################################################
     #                         END OF YOUR CODE                              #
@@ -153,7 +154,6 @@ class KNearestNeighbor(object):
       # A list of length k storing the labels of the k nearest neighbors to
       # the ith test point.
       closest_y = []
-
       #########################################################################
       # TODO:                                                                 #
       # Use the distance matrix to find the k nearest neighbors of the ith    #
@@ -161,6 +161,7 @@ class KNearestNeighbor(object):
       # neighbors. Store these labels in closest_y.                           #
       # Hint: Look up the function numpy.argsort.                             #
       #########################################################################
+      #寻找离第i个测试图片最近的k个训练图片
       closest_y = self.y_train[np.argsort(dists[i])[:k]]
       #########################################################################
       # TODO:                                                                 #
@@ -169,13 +170,7 @@ class KNearestNeighbor(object):
       # Store this label in y_pred[i]. Break ties by choosing the smaller     #
       # label.                                                                #
       #########################################################################
-
-
-
-      #np.bincount()可以把数组中出现的每个数字，当做index，数字出现的次数当做value来表示。
-
-      #np.argmax()可以返回数组中最大值的index。
-      y_pred[i] = np.bincount(closest_y).argmax()
+      y_pred[i] = np.argmax(np.bincount(closest_y))
       #########################################################################
       #                           END OF YOUR CODE                            # 
       #########################################################################

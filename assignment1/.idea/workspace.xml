@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66725f17-13df-4215-89a7-23215218a45a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cs231n/knn_solution.py" afterDir="false" />
+    <list default="true" id="342dc6ab-a351-41ea-8a81-a35b130dea6b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/classifiers/k_nearest_neighbor.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/classifiers/k_nearest_neighbor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/knn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/knn.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/MNIST_data/processed/test.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/MNIST_data/processed/training.pt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/MNIST_data/raw/t10k-images-idx3-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/MNIST_data/raw/t10k-labels-idx1-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/MNIST_data/raw/train-images-idx3-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/MNIST_data/raw/train-labels-idx1-ubyte" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/coco_captioning/coco2014_captions.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/coco_captioning/coco2014_vocab.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/coco_captioning/train2014_images.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/coco_captioning/train2014_urls.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/coco_captioning/train2014_vgg16_fc7.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/coco_captioning/train2014_vgg16_fc7_pca.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/coco_captioning/val2014_images.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/coco_captioning/val2014_urls.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/coco_captioning/val2014_vgg16_fc7.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../assignment3/cs231n/datasets/coco_captioning/val2014_vgg16_fc7_pca.h5" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,47 +34,46 @@
         <entry file="file://$PROJECT_DIR$/knn.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="1" />
+              <selected id="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cs231n/knn_solution.py">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/cs231n/classifiers/k_nearest_neighbor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="287">
+              <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/knn.ipynb" />
-        <option value="$PROJECT_DIR$/cs231n/knn_solution.py" />
+        <option value="$PROJECT_DIR$/cs231n/classifiers/k_nearest_neighbor.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="292" />
-    <option name="y" value="52" />
-    <option name="width" value="1400" />
-    <option name="height" value="1000" />
+    <option name="y" value="24" />
+    <option name="width" value="1398" />
+    <option name="height" value="992" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -66,21 +81,14 @@
               <item name="assignment1" type="b2602c69:ProjectViewProjectNode" />
               <item name="assignment1" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="assignment1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="assignment1" type="462c0819:PsiDirectoryNode" />
-              <item name="cs231n" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -94,25 +102,44 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="assignment1" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="assignment1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="66725f17-13df-4215-89a7-23215218a45a" name="Default Changelist" comment="" />
-      <created>1551838403843</created>
+      <changelist id="342dc6ab-a351-41ea-8a81-a35b130dea6b" name="Default Changelist" comment="" />
+      <created>1557579774157</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1551838403843</updated>
+      <updated>1557579774157</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18787548" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Python Console" />
@@ -120,7 +147,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -134,12 +161,16 @@
     <entry file="file://$PROJECT_DIR$/knn.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="1" />
+          <selected id="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/knn_solution.py">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/k_nearest_neighbor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="125" column="5" selection-start-line="125" selection-start-column="5" selection-end-line="125" selection-end-column="5" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
