@@ -76,9 +76,8 @@ class TwoLayerNet(object):
     # shape (N, C).                                                             #
     #############################################################################
     #计算scores
-    z1 = X.dot(W1) + b1
-    a1 = np.maximum(0, z1)
-    scores = a1.dot(W2) + b2
+    hidden_layer = np.maximum(0, X.dot(W1) + b1)
+    scores = hidden_layer.dot(W2) + b2
     #############################################################################
     #                              END OF YOUR CODE                             #
     #############################################################################
@@ -95,10 +94,11 @@ class TwoLayerNet(object):
     # in the variable loss, which should be a scalar. Use the Softmax           #
     # classifier loss.                                                          #
     #############################################################################
+    #用softmaxloss求法
     scores -= np.max(scores, axis=1, keepdims=True)
     sum_scores = np.sum(np.exp(scores), axis=1, keepdims=True)
-    p = np.exp(scores) / sum_scores
-    loss = np.sum(-np.log(p[np.arange(N), y]))
+    p_scores = np.exp(scores) / sum_scores
+    loss = np.sum(-np.log(p_scores[np.arange(N), y]))
     loss /= N
     loss += (0.5 * reg * np.sum(W1 * W1) + 0.5 * reg * np.sum(W2 * W2))
     #############################################################################
@@ -112,7 +112,21 @@ class TwoLayerNet(object):
     # and biases. Store the results in the grads dictionary. For example,       #
     # grads['W1'] should store the gradient on W1, and be a matrix of same size #
     #############################################################################
-    pass
+    #softmax后的梯度值
+    dscores = p_scores
+    dscores[range(N), y] -= 1
+    dscores /= N
+    #链式法则
+    grads['W2'] = np.dot(hidden_layer.T, dscores)
+    # print(dscores.shape)
+    grads['b2'] = np.sum(dscores, axis=0)
+
+    dhidden = np.dot(dscores,W2.T)
+    dhidden[hidden_layer <= 0.00001] = 0
+
+    grads['W1'] = np.dot(X.T, dhidden) + reg * W1
+    # print(dhidden.shape)
+    grads['b1'] = np.sum(dhidden, axis=0)
     #############################################################################
     #                              END OF YOUR CODE                             #
     #############################################################################
@@ -156,7 +170,11 @@ class TwoLayerNet(object):
       # TODO: Create a random minibatch of training data and labels, storing  #
       # them in X_batch and y_batch respectively.                             #
       #########################################################################
-      pass
+
+      #生成随机数组
+      cand = np.random.choice(np.arange(num_train), batch_size)
+      X_batch = X[cand]
+      y_batch = y[cand]
       #########################################################################
       #                             END OF YOUR CODE                          #
       #########################################################################
@@ -171,7 +189,7 @@ class TwoLayerNet(object):
       # using stochastic gradient descent. You'll need to use the gradients   #
       # stored in the grads dictionary defined above.                         #
       #########################################################################
-      pass
+      
       #########################################################################
       #                             END OF YOUR CODE                          #
       #########################################################################
