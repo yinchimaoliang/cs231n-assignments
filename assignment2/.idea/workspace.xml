@@ -2,28 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6e2b0b47-1274-425d-aa87-bcaa4eba3c0e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assignment2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assignment2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BatchNormalization.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/BatchNormalization.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConvolutionalNetworks.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/ConvolutionalNetworks.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dropout.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Dropout.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FullyConnectedNets.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FullyConnectedNets.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/PyTorch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TensorFlow.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/TensorFlow.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/collectSubmission.sh" beforeDir="false" afterPath="$PROJECT_DIR$/collectSubmission.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/classifiers/cnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/classifiers/cnn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/datasets/get_datasets.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/datasets/get_datasets.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/im2col_cython.cpython-37m-x86_64-linux-gnu.so" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cs231n/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/layers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/optim.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/optim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/solver.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frameworkpython" beforeDir="false" afterPath="$PROJECT_DIR$/frameworkpython" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/start_ipython_osx.sh" beforeDir="false" afterPath="$PROJECT_DIR$/start_ipython_osx.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,16 +18,25 @@
         <entry file="file://$PROJECT_DIR$/FullyConnectedNets.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="8" />
+              <selected id="28" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cs231n/classifiers/fc_net.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="515">
+              <caret line="289" column="71" selection-start-line="289" selection-start-column="71" selection-end-line="289" selection-end-column="71" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs231n/layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+            <state relative-caret-position="185">
+              <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -62,8 +52,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/FullyConnectedNets.ipynb" />
         <option value="$PROJECT_DIR$/cs231n/layers.py" />
+        <option value="$PROJECT_DIR$/FullyConnectedNets.ipynb" />
+        <option value="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" />
       </list>
     </option>
   </component>
@@ -167,17 +158,24 @@
     <entry file="file://$PROJECT_DIR$/FullyConnectedNets.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="8" />
+          <selected id="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="86" column="22" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
+        <state relative-caret-position="185">
+          <caret line="94" column="4" selection-start-line="94" selection-start-column="4" selection-end-line="94" selection-end-column="4" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/fc_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="515">
+          <caret line="289" column="71" selection-start-line="289" selection-start-column="71" selection-end-line="289" selection-end-column="71" />
         </state>
       </provider>
     </entry>
