@@ -4,8 +4,7 @@
     <list default="true" id="6e2b0b47-1274-425d-aa87-bcaa4eba3c0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BatchNormalization.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/BatchNormalization.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FullyConnectedNets.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/FullyConnectedNets.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/optim.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/optim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/layers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +18,7 @@
         <entry file="file://$PROJECT_DIR$/FullyConnectedNets.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="47" />
+              <selected id="45" />
             </state>
           </provider>
         </entry>
@@ -28,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/BatchNormalization.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="4" />
+              <selected id="30" />
             </state>
           </provider>
         </entry>
@@ -103,7 +102,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs231n/layer_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
+            <state relative-caret-position="917">
               <caret line="105" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
@@ -112,8 +111,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cs231n/layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-119">
-              <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+            <state relative-caret-position="-418">
+              <caret line="359" lean-forward="true" selection-start-line="359" selection-end-line="359" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -130,12 +129,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/cs231n/solver.py" />
-        <option value="$PROJECT_DIR$/cs231n/layers.py" />
         <option value="$PROJECT_DIR$/cs231n/layer_utils.py" />
         <option value="$PROJECT_DIR$/cs231n/classifiers/fc_net.py" />
         <option value="$PROJECT_DIR$/cs231n/optim.py" />
         <option value="$PROJECT_DIR$/FullyConnectedNets.ipynb" />
         <option value="$PROJECT_DIR$/BatchNormalization.ipynb" />
+        <option value="$PROJECT_DIR$/cs231n/layers.py" />
       </list>
     </option>
   </component>
@@ -257,13 +256,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FullyConnectedNets.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/optim.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2160">
@@ -319,9 +311,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/FullyConnectedNets.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/layer_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
+        <state relative-caret-position="917">
           <caret line="105" selection-start-line="105" selection-end-line="105" />
         </state>
       </provider>
@@ -329,14 +328,14 @@
     <entry file="file://$PROJECT_DIR$/BatchNormalization.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="4" />
+          <selected id="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-119">
-          <caret line="118" column="4" selection-start-line="118" selection-start-column="4" selection-end-line="118" selection-end-column="4" />
+        <state relative-caret-position="-418">
+          <caret line="359" lean-forward="true" selection-start-line="359" selection-end-line="359" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
