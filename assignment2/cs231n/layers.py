@@ -454,6 +454,7 @@ def dropout_forward(x, dropout_param):
         # TODO: Implement training phase forward pass for inverted dropout.   #
         # Store the dropout mask in the mask variable.                        #
         #######################################################################
+        #*x.shape等价于x.shape[0]接x.shape[1]
         mask = (np.random.rand(*x.shape) < p) / p
         out = x * mask
         #######################################################################
@@ -532,7 +533,28 @@ def conv_forward_naive(x, w, b, conv_param):
     # TODO: Implement the convolutional forward pass.                         #
     # Hint: you can use the function np.pad for padding.                      #
     ###########################################################################
-    pass
+    #获取参数
+    pad = conv_param['pad']
+    stride = conv_param['stride']
+
+    N,C,H,W = x.shape
+    F, C, HH, WW = w.shape
+
+    new_H = 1 + int((H + 2 * pad - HH) / stride)
+    new_W = 1 + int((W + 2 * pad - WW) / stride)
+    out = np.zeros([N, F, new_H, new_W])
+
+    for n in range(N):
+        for f in range(F):
+            conv_newH_newW = np.ones([new_H, new_W]) * b[f]
+            for c in range(C):
+                ## 填充原始矩阵，填充大小为pad，填充值为0
+                pedded_x = np.lib.pad(x[n, c], pad_width=pad, mode='constant', constant_values=0)
+                for i in range(new_H):
+                    for j in range(new_W):
+                        conv_newH_newW[i, j] += np.sum(pedded_x[i * stride: i * stride+HH, j * stride: j * stride + WW] * w[f, c, :, :] )
+                        out[n,f] = conv_newH_newW
+
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
@@ -557,7 +579,26 @@ def conv_backward_naive(dout, cache):
     ###########################################################################
     # TODO: Implement the convolutional backward pass.                        #
     ###########################################################################
-    pass
+    x, w, b, conv_param = cache
+    pad = conv_param['pad']
+    stride = conv_param['stride']
+    F, C, HH, WW = w.shape
+    N, C, H, W = x.shape
+    N, F, new_H, new_W = dout.shape
+
+    # 下面，我们模拟卷积，首先填充x。
+    padded_x = np.lib.pad(x, ((0, 0), (0, 0), (pad, pad), (pad, pad)), mode='constant', constant_values=0)
+    padded_dx = np.zeros_like(padded_x) # 填充了的dx，后面去填充即可得到dx
+    dw = np.zeros_like(w)
+    db = np.zeros_like(b)
+    for n in range(N): # 第n个图像
+        for f in range(F): # 第f个过滤器
+            for i in range(new_H):
+                for j in range(new_W):
+                    db[f] += dout[n, f, i, j] # dg对db求导为1*dout
+                    dw[f] += padded_x[n, :, i*stride : HH + i*stride, j*stride : WW + j*stride] * dout[n, f, i, j]
+                    padded_dx[n, :, i*stride : HH + i*stride, j*stride : WW + j*stride] += w[f] * dout[n, f, i, j] # 去掉填充部分
+                    dx = padded_dx[:, :, pad:pad + H, pad:pad + W]
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
