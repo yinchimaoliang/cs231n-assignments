@@ -4,6 +4,7 @@
     <list default="true" id="6e2b0b47-1274-425d-aa87-bcaa4eba3c0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BatchNormalization.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/BatchNormalization.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dropout.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Dropout.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cs231n/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/layers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,19 +16,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/FullyConnectedNets.ipynb">
+        <entry file="file://$PROJECT_DIR$/BatchNormalization.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="45" />
+              <selected id="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BatchNormalization.ipynb">
+        <entry file="file://$PROJECT_DIR$/Dropout.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="30" />
+              <selected id="6" />
             </state>
           </provider>
         </entry>
@@ -102,7 +103,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs231n/layer_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="917">
+            <state relative-caret-position="1560">
               <caret line="105" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
@@ -111,8 +112,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cs231n/layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-418">
-              <caret line="359" lean-forward="true" selection-start-line="359" selection-end-line="359" />
+            <state relative-caret-position="335">
+              <caret line="492" column="24" selection-start-line="492" selection-start-column="24" selection-end-line="492" selection-end-column="24" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -134,6 +135,7 @@
         <option value="$PROJECT_DIR$/cs231n/optim.py" />
         <option value="$PROJECT_DIR$/FullyConnectedNets.ipynb" />
         <option value="$PROJECT_DIR$/BatchNormalization.ipynb" />
+        <option value="$PROJECT_DIR$/Dropout.ipynb" />
         <option value="$PROJECT_DIR$/cs231n/layers.py" />
       </list>
     </option>
@@ -223,15 +225,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -256,6 +258,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/FullyConnectedNets.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/optim.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2160">
@@ -311,16 +320,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FullyConnectedNets.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/layer_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="917">
+        <state relative-caret-position="1560">
           <caret line="105" selection-start-line="105" selection-end-line="105" />
         </state>
       </provider>
@@ -328,14 +330,21 @@
     <entry file="file://$PROJECT_DIR$/BatchNormalization.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="30" />
+          <selected id="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dropout.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-418">
-          <caret line="359" lean-forward="true" selection-start-line="359" selection-end-line="359" />
+        <state relative-caret-position="335">
+          <caret line="492" column="24" selection-start-line="492" selection-start-column="24" selection-end-line="492" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
