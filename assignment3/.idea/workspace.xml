@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0300b496-ee75-4aca-bfdd-8e352e295eb3" name="Default Changelist" comment="" />
+    <list default="true" id="7219f5d6-c0b8-44fa-b38f-3f4ccf272ad1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../assignment2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assignment3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assignment3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GANs-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/GANs-PyTorch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LSTM_Captioning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/LSTM_Captioning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RNN_Captioning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/RNN_Captioning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/classifiers/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/classifiers/rnn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/datasets/get_assignment3_data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/datasets/get_assignment3_data.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/datasets/get_coco_captioning.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/datasets/get_coco_captioning.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/datasets/get_imagenet_val.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/datasets/get_imagenet_val.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/datasets/get_squeezenet_tf.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/datasets/get_squeezenet_tf.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/datasets/imagenet_val_25.npz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/datasets/squeezenet.ckpt.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/datasets/squeezenet.ckpt.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/datasets/squeezenet.ckpt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/rnn_layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/rnn_layers.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,85 +31,26 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="33" />
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/GANs-PyTorch.ipynb">
+        <entry file="file://$PROJECT_DIR$/RNN_Captioning.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/matplotlib/mathtext.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="2055" column="8" selection-start-line="2055" selection-start-column="8" selection-end-line="2055" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs231n/captioning_solver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2220">
-              <caret line="154" column="46" selection-start-line="154" selection-start-column="46" selection-end-line="154" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cs231n/rnn_layers.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4515">
-              <caret line="303" selection-start-line="303" selection-end-line="303" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/assignment3/RNN_Captioning.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/CS231n-2017-master/assignment3/GANs-PyTorch.ipynb">
-          <provider selected="true" editor-type-id="ipnb-editor">
-            <state>
-              <selected id="45" />
+              <selected id="1" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>W_embed</find>
-    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -95,23 +58,16 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/cs231n/classifiers/rnn.py" />
-        <option value="$PROJECT_DIR$/cs231n/captioning_solver.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/RNN_Captioning.ipynb" />
-        <option value="$PROJECT_DIR$/cs231n/rnn_layers.py" />
-        <option value="$PROJECT_DIR$/LSTM_Captioning.ipynb" />
-        <option value="$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb" />
-        <option value="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" />
-        <option value="$USER_HOME$/Downloads/CS231n-2017-master/assignment3/GANs-PyTorch.ipynb" />
-        <option value="$PROJECT_DIR$/GANs-PyTorch.ipynb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="292" />
-    <option name="y" value="24" />
-    <option name="width" value="1398" />
-    <option name="height" value="992" />
+    <option name="y" value="52" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -134,8 +90,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/CS231n-2017-master/assignment3/GANs-PyTorch.ipynb" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -149,7 +104,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.code">
+  <component name="RunManager">
     <configuration name="assignment3" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="assignment3" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -167,165 +122,54 @@
       <option name="ipnbPort" value="8888" />
       <method v="2" />
     </configuration>
-    <configuration name="code" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="assignment3" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="/code.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python.code" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0300b496-ee75-4aca-bfdd-8e352e295eb3" name="Default Changelist" comment="" />
-      <created>1557052785393</created>
+      <changelist id="7219f5d6-c0b8-44fa-b38f-3f4ccf272ad1" name="Default Changelist" comment="" />
+      <created>1558187298513</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1557052785393</updated>
+      <updated>1558187298513</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
-    <editor active="true" />
+    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.37656903" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Downloads/assignment3/NetworkVisualization-PyTorch.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RNN_Captioning.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/rnn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2580">
-          <caret line="177" column="95" selection-start-line="177" selection-start-column="95" selection-end-line="177" selection-end-column="95" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LSTM_Captioning.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/captioning_solver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2220">
-          <caret line="154" column="46" selection-start-line="154" selection-start-column="46" selection-end-line="154" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/rnn_layers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4515">
-          <caret line="303" selection-start-line="303" selection-end-line="303" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/CS231n-2017-master/assignment3/StyleTransfer-PyTorch.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/CS231n-2017-master/assignment3/NetworkVisualization-PyTorch.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/matplotlib/mathtext.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="2055" column="8" selection-start-line="2055" selection-start-column="8" selection-end-line="2055" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/assignment3/RNN_Captioning.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/CS231n-2017-master/assignment3/GANs-PyTorch.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GANs-PyTorch.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="48" />
+          <selected id="1" />
         </state>
       </provider>
     </entry>
