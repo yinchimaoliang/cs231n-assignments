@@ -628,7 +628,19 @@ def max_pool_forward_naive(x, pool_param):
     ###########################################################################
     # TODO: Implement the max-pooling forward pass                            #
     ###########################################################################
-    pass
+    N,C,H,W = x.shape
+    pool_height = pool_param['pool_height']
+    pool_width = pool_param['pool_width']
+    pool_stride = pool_param['stride']
+    new_H = 1 + int((H - pool_height) / pool_stride)  # 池化结果矩阵高度
+    new_W = 1 + int((W - pool_width) / pool_stride)  # 池化结果矩阵宽度
+    out = np.zeros([N, C, new_H, new_W])
+    for n in range(N):
+        for c in range(C):
+            for i in range(new_H):
+                for j in range(new_W):
+                    out[n, c, i, j] = np.max(x[n, c, i * pool_stride: i * pool_stride + pool_height, j * pool_stride: j * pool_stride + pool_width])
+
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
@@ -651,7 +663,27 @@ def max_pool_backward_naive(dout, cache):
     ###########################################################################
     # TODO: Implement the max-pooling backward pass                           #
     ###########################################################################
-    pass
+    x,pool_param = cache
+    N,C,H,W = x.shape
+    pool_height = pool_param['pool_height']
+    pool_width = pool_param['pool_width']
+    pool_stride = pool_param['stride']
+    new_H = 1 + int((H - pool_height) / pool_stride)
+    new_W = 1 + int((W - pool_width) / pool_stride)
+    dx = np.zeros_like(x)
+    for n in range(N):
+        for c in range(C):
+            for h in range(new_H):
+                for w in range(new_W):
+                    #最大值的地方有梯度
+                    window = x[n,c,h * pool_stride : h * pool_stride + pool_height,w * pool_stride : w * pool_stride + pool_width]
+                    pos = np.where(window == np.max(window))
+                    # print(pos)
+                    # print(pos[0][0])
+                    dx[n,c,pos[0][0] + h * pool_height,pos[1][0] + w * pool_width] = dout[n,c,h,w]
+                    #高级方法
+                    # dx[n, c, h * pool_stride: h * pool_stride + pool_height,
+                    # w * pool_stride: w * pool_stride + pool_width] = (window == np.max(window)) * dout[n, c, h, w]
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
