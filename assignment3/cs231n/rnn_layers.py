@@ -34,7 +34,10 @@ def rnn_step_forward(x, prev_h, Wx, Wh, b):
     # hidden state and any values you need for the backward pass in the next_h   #
     # and cache variables respectively.                                          #
     ##############################################################################
-    pass
+    temp1 = np.dot(x, Wx)
+    temp2 = np.dot(prev_h, Wh)
+    cache = (x, prev_h, Wx, Wh, temp1 + temp2 + b)
+    next_h = np.tanh(temp1 + temp2 + b)
     ##############################################################################
     #                               END OF YOUR CODE                             #
     ##############################################################################
@@ -63,7 +66,29 @@ def rnn_step_backward(dnext_h, cache):
     # HINT: For the tanh function, you can compute the local derivative in terms #
     # of the output value from tanh.                                             #
     ##############################################################################
-    pass
+    x = cache[0]
+    h = cache[1]
+    Wx = cache[2]
+    Wh = cache[3]
+    # cache[4]对应着公式中的a
+    cacheD=cache[4]
+    N,H=h.shape
+    # 计算激活函数的导数
+    temp = np.ones((N,H))-np.square(np.tanh(cacheD))
+    delta = np.multiply(temp,dnext_h)
+    # 计算x的梯度
+    tempx = np.dot(Wx,delta.T)
+    dx=tempx.T
+    # h的提督
+    temph = np.dot(Wh,delta.T)
+    dprev_h=temph.T
+    # Wxh的梯度
+    dWx = np.dot(x.T,delta)
+    # Whh
+    dWh = np.dot(h.T,delta)
+    # b的梯度
+    tempb = np.sum(delta,axis=0)
+    db=tempb.T
     ##############################################################################
     #                               END OF YOUR CODE                             #
     ##############################################################################
@@ -94,7 +119,19 @@ def rnn_forward(x, h0, Wx, Wh, b):
     # input data. You should use the rnn_step_forward function that you defined  #
     # above. You can use a for loop to help compute the forward pass.            #
     ##############################################################################
-    pass
+    N, T, D = x.shape
+    N, H = h0.shape
+    prev_h = h0  # 之前公式中对应的a
+    h1=np.empty([N,T,H]) # 隐藏状态h的序列
+    h2=np.empty([N,T,H]) # 滞后h一个时间点
+    h3=np.empty([N,T,H])
+    for i in range(0, T): #单步前向传播
+        temp_h, cache_temp = rnn_step_forward(x[:,i,:], prev_h, Wx, Wh, b) #记录下需要的变量
+        h3[:,i,:]=prev_h
+        prev_h=temp_h
+        h2[:,i,:]=temp_h
+        h1[:,i,:]=cache_temp[4]
+    cache=(x,h3,Wx,Wh,h1)
     ##############################################################################
     #                               END OF YOUR CODE                             #
     ##############################################################################
@@ -106,9 +143,9 @@ def rnn_backward(dh, cache):
     Compute the backward pass for a vanilla RNN over an entire sequence of data.
 
     Inputs:
-    - dh: Upstream gradients of all hidden states, of shape (N, T, H). 
-    
-    NOTE: 'dh' contains the upstream gradients produced by the 
+    - dh: Upstream gradients of all hidden states, of shape (N, T, H).
+
+    NOTE: 'dh' contains the upstream gradients produced by the
     individual loss functions at each timestep, *not* the gradients
     being passed between timesteps (which you'll have to compute yourself
     by calling rnn_step_backward in a loop).
@@ -126,7 +163,34 @@ def rnn_backward(dh, cache):
     # sequence of data. You should use the rnn_step_backward function that you   #
     # defined above. You can use a for loop to help compute the backward pass.   #
     ##############################################################################
-    pass
+    x = cache[0]
+    N, T, D = x.shape
+    N, T, H = dh.shape
+    # 初始化
+    dWx = np.zeros((D, H))
+    dWh = np.zeros((H, H))
+    db = np.zeros(H)
+    dout = dh
+    dx = np.empty([N, T, D])
+    dh = np.empty([N, T, H])
+    # 当前时刻隐藏状态对应的梯度
+    hnow = np.zeros([N, H])
+
+    for k in range(0, T):
+        i = T - 1 - k
+        # 我们要注意，除了上一层传来的梯度，我们每一层都有输出，对应的误差函数也会传入梯度
+        hnow = hnow + dout[:, i, :]
+        cacheT = (cache[0][:, i, :], cache[1][:, i, :], cache[2], cache[3], cache[4][:, i, :])
+        # 单步反向传播
+        dx_temp, dprev_h, dWx_temp, dWh_temp, db_temp = rnn_step_backward(hnow, cacheT)
+        hnow = dprev_h
+        dx[:, i, :] = dx_temp
+        # 将每一层共享的参数对应的梯度相加
+        dWx = dWx + dWx_temp
+        dWh = dWh + dWh_temp
+        db = db + db_temp
+
+    dh0 = hnow
     ##############################################################################
     #                               END OF YOUR CODE                             #
     ##############################################################################

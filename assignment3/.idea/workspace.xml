@@ -3,25 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7219f5d6-c0b8-44fa-b38f-3f4ccf272ad1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../assignment2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assignment3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assignment3.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GANs-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/GANs-PyTorch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LSTM_Captioning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/LSTM_Captioning.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RNN_Captioning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/RNN_Captioning.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/classifiers/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/classifiers/rnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/datasets/get_assignment3_data.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/datasets/get_assignment3_data.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/datasets/get_coco_captioning.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/datasets/get_coco_captioning.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/datasets/get_imagenet_val.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/datasets/get_imagenet_val.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/datasets/get_squeezenet_tf.sh" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/datasets/get_squeezenet_tf.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/datasets/imagenet_val_25.npz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/datasets/squeezenet.ckpt.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/datasets/squeezenet.ckpt.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cs231n/datasets/squeezenet.ckpt.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cs231n/rnn_layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/rnn_layers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +14,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -41,11 +24,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RNN_Captioning.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="1" />
+              <selected id="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cs231n/rnn_layers.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="199" column="4" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -60,6 +52,7 @@
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/RNN_Captioning.ipynb" />
+        <option value="$PROJECT_DIR$/cs231n/rnn_layers.py" />
       </list>
     </option>
   </component>
@@ -137,22 +130,23 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -169,7 +163,14 @@
     <entry file="file://$PROJECT_DIR$/RNN_Captioning.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="1" />
+          <selected id="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs231n/rnn_layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="199" column="4" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="4" />
         </state>
       </provider>
     </entry>
