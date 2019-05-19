@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7219f5d6-c0b8-44fa-b38f-3f4ccf272ad1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../assignment2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RNN_Captioning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/RNN_Captioning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/classifiers/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/classifiers/rnn.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cs231n/rnn_layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/rnn_layers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,16 +27,25 @@
         <entry file="file://$PROJECT_DIR$/RNN_Captioning.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="18" />
+              <selected id="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cs231n/classifiers/rnn.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="151" column="24" lean-forward="true" selection-start-line="151" selection-start-column="24" selection-end-line="151" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs231n/rnn_layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="199" column="4" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="4" />
+            <state relative-caret-position="380">
+              <caret line="134" column="10" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -51,8 +59,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/RNN_Captioning.ipynb" />
         <option value="$PROJECT_DIR$/cs231n/rnn_layers.py" />
+        <option value="$PROJECT_DIR$/RNN_Captioning.ipynb" />
+        <option value="$PROJECT_DIR$/cs231n/classifiers/rnn.py" />
       </list>
     </option>
   </component>
@@ -133,12 +142,12 @@
     <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -160,17 +169,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RNN_Captioning.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="14" />
+    <entry file="file://$PROJECT_DIR$/cs231n/rnn_layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="134" column="10" selection-start-line="134" selection-start-column="10" selection-end-line="134" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/rnn_layers.py">
+    <entry file="file://$PROJECT_DIR$/RNN_Captioning.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/rnn.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="199" column="4" selection-start-line="199" selection-start-column="4" selection-end-line="199" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="151" column="24" lean-forward="true" selection-start-line="151" selection-start-column="24" selection-end-line="151" selection-end-column="24" />
         </state>
       </provider>
     </entry>
