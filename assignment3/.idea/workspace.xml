@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7219f5d6-c0b8-44fa-b38f-3f4ccf272ad1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" afterDir="false" />
-    </list>
+    <list default="true" id="7219f5d6-c0b8-44fa-b38f-3f4ccf272ad1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +166,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
