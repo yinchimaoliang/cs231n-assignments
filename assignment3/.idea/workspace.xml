@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7219f5d6-c0b8-44fa-b38f-3f4ccf272ad1" name="Default Changelist" comment="" />
+    <list default="true" id="7219f5d6-c0b8-44fa-b38f-3f4ccf272ad1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cs231n/rnn_layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
+            <state relative-caret-position="7275">
               <caret line="487" selection-start-line="487" selection-end-line="487" />
             </state>
           </provider>
@@ -68,7 +71,7 @@
         <entry file="file://$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="21" />
+              <selected id="30" />
             </state>
           </provider>
         </entry>
@@ -103,7 +106,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,10 +117,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../unsuitable-picture-recognition" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -215,6 +218,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/cs231n/rnn_layers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7275">
+          <caret line="487" selection-start-line="487" selection-end-line="487" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -222,17 +232,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cs231n/rnn_layers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="487" selection-start-line="487" selection-end-line="487" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="21" />
+          <selected id="30" />
         </state>
       </provider>
     </entry>
