@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7219f5d6-c0b8-44fa-b38f-3f4ccf272ad1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../assignment2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../assignment2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GANs-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/GANs-PyTorch.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,16 +64,25 @@
         <entry file="file://$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="29" />
+              <selected id="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb">
+          <provider selected="true" editor-type-id="ipnb-editor">
+            <state>
+              <selected id="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb">
+        <entry file="file://$PROJECT_DIR$/GANs-PyTorch.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="30" />
+              <selected id="48" />
             </state>
           </provider>
         </entry>
@@ -89,8 +100,9 @@
         <option value="$PROJECT_DIR$/RNN_Captioning.ipynb" />
         <option value="$PROJECT_DIR$/LSTM_Captioning.ipynb" />
         <option value="$PROJECT_DIR$/cs231n/rnn_layers.py" />
-        <option value="$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb" />
         <option value="$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb" />
+        <option value="$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb" />
+        <option value="$PROJECT_DIR$/GANs-PyTorch.ipynb" />
       </list>
     </option>
   </component>
@@ -106,6 +118,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -117,11 +130,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../unsuitable-picture-recognition" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -168,14 +180,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24959038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3294979" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -225,17 +238,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/StyleTransfer-PyTorch.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="30" />
+          <selected id="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NetworkVisualization-PyTorch.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GANs-PyTorch.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="48" />
         </state>
       </provider>
     </entry>
